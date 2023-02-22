@@ -7,7 +7,7 @@ public class CuerpoCeleste {
     private double distanciaAlSol;//metros
     private int id;
     private String nombre;
-    
+
     public CuerpoCeleste(double masa, double densidad, double diametro, double distanciaAlSol, int id, String nombre) {
         this.masa = masa;
         this.densidad = densidad;
@@ -17,5 +17,12 @@ public class CuerpoCeleste {
         this.nombre = nombre;
     }
 
+    public double getMasa() {
+        return masa;
+    }
+    
+    public double calcularDistancia(CuerpoCeleste otroCuerpo) {
+        return Math.abs(this.distanciaAlSol - otroCuerpo.distanciaAlSol);
+    }
     
 }
