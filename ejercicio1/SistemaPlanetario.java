@@ -1,5 +1,4 @@
 package ejercicio1;
-
 import java.util.List;
 
 /**
@@ -16,5 +15,12 @@ public class SistemaPlanetario {
 
     public void eliminarCuerpo(CuerpoCeleste cuerpo) {
         cuerpos.remove(cuerpo);
+    }
+
+    public double calcularAtraccionGravitatoria(CuerpoCeleste cuerpo1, CuerpoCeleste cuerpo2) {
+        double distancia = cuerpo1.calcularDistancia(cuerpo2);
+        double masa1 = cuerpo1.getMasa();
+        double masa2 = cuerpo2.getMasa();
+        return G * masa1 * masa2 / (distancia * distancia);
     }
 }
