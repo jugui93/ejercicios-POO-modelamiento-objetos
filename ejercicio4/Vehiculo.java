@@ -1,4 +1,4 @@
-package ejercicio4y5;
+package ejercicio4;
 
 public class Vehiculo {
     private int numPasajeros;
@@ -75,4 +75,5 @@ public class Vehiculo {
                 "\nFecha de matriculación: " + fechaMatriculacion + "\nMedio de desplazamiento: " + medioDesplazamiento + "\nMarca: " + marca +
                 "\nModelo: " + modelo + "\nTipo de combustible: " + tipoCombustible;
     }
+
 }
