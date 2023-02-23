@@ -39,4 +39,9 @@ public class SistemaPlanetario {
             System.out.println("--------------------");
         }
     }
+
+    public void displayFuerzaGravitatoria(CuerpoCeleste cuerpo1, CuerpoCeleste cuerpo2) {
+        double fuerza = this.calcularAtraccionGravitatoria(cuerpo1, cuerpo2);
+        System.out.println("La fuerza gravitatoria entre " + cuerpo1.getNombre() + " y " + cuerpo2.getNombre() + " es de " + fuerza + " N.");
+    }
 }

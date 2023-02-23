@@ -10,5 +10,6 @@ public class TestSistemaPlanetario {
         sistemaSolar.agregarCuerpo(tierra);
 
         sistemaSolar.displayCuerpos();
+        sistemaSolar.displayFuerzaGravitatoria(tierra, marte);
     }
 }
