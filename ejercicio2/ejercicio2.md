@@ -5,9 +5,8 @@ Cuando ejecutamos un programa Java, especificamos el nombre de la clase que cont
 
 Por ejemplo, si tenemos dos clases Clase1 y Clase2, cada una con su propio método main, podemos ejecutarlos de la siguiente manera:
 
-java
-Copy code
 java Clase1 // Ejecuta el método main de la clase Clase1
+
 java Clase2 // Ejecuta el método main de la clase Clase2
 Si queremos que se ejecute el método main de una clase específica, debemos especificar el nombre de la clase que contiene ese método en el comando de ejecución.
 
