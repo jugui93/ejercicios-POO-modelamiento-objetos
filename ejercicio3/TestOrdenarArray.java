@@ -1,5 +1,6 @@
 package ejercicio3;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class TestOrdenarArray {
@@ -12,13 +13,13 @@ public class TestOrdenarArray {
         int tipo = scanner.nextInt();
 
         if (tipo == 1) {
-            ordenarArreglo.burbuja(ordenarArreglo.getArreglo());
+            ordenarArreglo.burbuja();
         } else if (tipo == 2) {
-            ordenarArreglo.quickSort(ordenarArreglo.getArreglo(), 0, n - 1);
+            ordenarArreglo.quickSort( 0, n - 1);
         } else {
             System.out.println("Tipo de ordenamiento inválido.");
             return;
         }
-        System.out.println("Array ordenado: " + Arrays.toString(arr));
+        System.out.println("Array ordenado: " + Arrays.toString(ordenarArreglo.getArreglo()));
     }
 }

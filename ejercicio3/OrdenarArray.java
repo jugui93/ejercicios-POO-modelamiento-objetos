@@ -12,7 +12,7 @@ public class OrdenarArray {
         this.arreglo = generarArray(longitud);
     }
 
-    public static double[] generarArray(int n) {
+    public double[] generarArray(int n) {
         Random random = new Random();
         double[] arr = new double[n];
         for (int i = 0; i < n; i++) {
@@ -22,20 +22,47 @@ public class OrdenarArray {
         return arr;
     }
 
-    public static void burbuja(double[] arr) {
-        int n = arr.length;
+    public void burbuja() {
+        int n = this.longitud;
         for (int i = 0; i < n - 1; i++) {
             for (int j = 0; j < n - i - 1; j++) {
-                if (arr[j] > arr[j + 1]) {
-                    double temp = arr[j];
-                    arr[j] = arr[j + 1];
-                    arr[j + 1] = temp;
+                if (this.arreglo[j] > this.arreglo[j + 1]) {
+                    double temp = this.arreglo[j];
+                    this.arreglo[j] = this.arreglo[j + 1];
+                    this.arreglo[j + 1] = temp;
                 }
             }
         }
     }
 
+    public void quickSort(int izq, int der) {
+        double pivote = this.getArreglo()[(izq + der) / 2];
+        int i = izq;
+        int j = der;
+        do {
+            while (this.arreglo[i] < pivote) i++;
+            while (this.arreglo[j] > pivote) j--;
+            if (i <= j) {
+                double temp = this.arreglo[i];
+                this.arreglo[i] = this.arreglo[j];
+                this.arreglo[j] = temp;
+                i++;
+                j--;
+            }
+        } while (i <= j);
+        if (izq < j) {
+            quickSort(izq, j);
+        }
+        if (i < der) {
+            quickSort(i, der);
+        }
+    }
+
     public double[] getArreglo() {
         return arreglo;
+    }
+
+    public int getLongitud() {
+        return longitud;
     }
 }
