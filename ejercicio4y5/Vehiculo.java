@@ -70,5 +70,9 @@ public class Vehiculo {
     public void setTipoCombustible(String tipoCombustible) {
         this.tipoCombustible = tipoCombustible;
     }
-
+    public String toString() {
+        return "Número de pasajeros: " + numPasajeros + "\nTiene tripulación: " + tieneTripulacion + "\nNúmero de ruedas: " + numRuedas +
+                "\nFecha de matriculación: " + fechaMatriculacion + "\nMedio de desplazamiento: " + medioDesplazamiento + "\nMarca: " + marca +
+                "\nModelo: " + modelo + "\nTipo de combustible: " + tipoCombustible;
+    }
 }
