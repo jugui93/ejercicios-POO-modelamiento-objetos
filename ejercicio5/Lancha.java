@@ -20,7 +20,7 @@ public class Lancha extends Vehiculo{
 
     @Override
     public String toString() {
-        return "Coche [Numero de Pasajeros=" + getNumPasajeros() + ", Tiene tripulacion=" + isTieneTripulacion() + ", Numero de Ruedas=" + getNumRuedas()
+        return "Lancha [Numero de Pasajeros=" + getNumPasajeros() + ", Tiene tripulacion=" + isTieneTripulacion() + ", Numero de Ruedas=" + getNumRuedas()
                 + ", fecha de Matriculacion=" + getFechaMatriculacion() + ", medio de Desplazamiento=" + getMedioDesplazamiento()
                 + ", potencia=" + getPotencia() + "]";
     }

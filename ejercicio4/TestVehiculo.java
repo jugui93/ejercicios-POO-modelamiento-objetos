@@ -41,5 +41,7 @@ public class TestVehiculo {
         for (Vehiculo vehiculo : vehiculos) {
             System.out.println(vehiculo);
         }
+
+        scanner.close();
     }    
 }
