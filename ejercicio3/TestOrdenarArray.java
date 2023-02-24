@@ -21,5 +21,7 @@ public class TestOrdenarArray {
             return;
         }
         System.out.println("Array ordenado: " + Arrays.toString(ordenarArreglo.getArreglo()));
+
+        scanner.close();
     }
 }
